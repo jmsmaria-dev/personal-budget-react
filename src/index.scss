@@ -1,0 +1,159 @@
+// SASS Variables
+$primary-color: #4d5791;
+$secondary-color: #b4c6f0;
+$text-color: #fff;
+$hover-bg: white;
+$font-size-base: 10px;
+
+/* Accessibility: Skip to content link */
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  padding: 0.5em 1em;
+  background: #222;
+  color: $text-color;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 4px 0;
+  transition: left 0.2s;
+
+  &:focus {
+    left: 0;
+    margin-top: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-base;
+  font-family: Tahoma, Arial;
+}
+
+nav {
+  width: 100%;
+  background-color: $primary-color;
+  height: 44px;
+  padding: 0 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0 20px;
+        line-height: 44px;
+        font-size: 1.4em;
+        text-decoration: none;
+        color: $text-color;
+        margin: 0;
+
+        &:hover {
+          background-color: $hover-bg;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  height: 350px;
+  background-color: $secondary-color;
+  background-image: url('./bg.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 40px;
+
+  h1,
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    color: $text-color;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $primary-color;
+  }
+}
+
+main {
+  padding: 40px;
+  width: 100%;
+
+  article {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin: 10px;
+    }
+  }
+}
+
+.page-area {
+  max-width: 768px;
+  display: inline-block;
+}
+
+footer {
+  height: 50px;
+  background-color: $secondary-color;
+  padding: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+#d3Chart {
+  width: 960px;
+  height: 500px;
+  position: relative;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .lines polyline {
+    opacity: 0.3;
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+  }
+}
+
+path.slice {
+  stroke-width: 2px;
+}
+
+polyline {
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+  opacity: 0.3;
+}

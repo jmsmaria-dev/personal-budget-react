@@ -11,9 +11,12 @@
   border-radius: 0 0 4px 0;
   transition: left 0.2s;
 }
+
 .skip:focus {
   left: 0;
+  margin-top: 0;
 }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -364,144 +367,127 @@
     display: none;
   }
 
-
-
-  
-
-
-
-  * {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 10px;
-    font-family: Tahoma, Arial;
+  margin: 0;
+  font-size: 10px;
+  font-family: Tahoma, Arial;
 }
 
 nav {
-    width: 100%;
-    background-color: #4d5791;
-    height: 44px;
-    padding: 0 40px;
+  width: 100%;
+  background-color: #4d5791;
+  height: 44px;
+  padding: 0 40px;
 }
 
 nav ul,
 nav ul li {
-    margin: 0;
-    padding: 0 ;
-    list-style: none;
-    display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
 }
 
 nav ul li a {
-    display: block;
-    padding: 0 20px;
-    line-height: 44px;
-    font-size: 1.4em;
-    text-decoration: none;
-    color: #fff;
-    margin: 0;
+  display: block;
+  padding: 0 20px;
+  line-height: 44px;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
 }
 
-nav ul li a:hover  {
-    background-color: white;
-    color: #4d5791;
+nav ul li a:hover {
+  background-color: white;
+  color: #4d5791;
 }
 
 div.hero {
-    height: 350px;
-    background-color: #b4c6f0;
-    background-image: url('./bg.png');
-    background-size: 400px;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    padding-top: 40px;
+  height: 350px;
+  background-color: #b4c6f0;
+  background-image: url('./bg.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 40px;
 }
 
 div.hero h1,
 div.hero h2 {
-    text-align: center;
-    margin: 0;
+  text-align: center;
+  margin: 0;
 }
 
 div.hero h1 {
-    color: #fff;
-    font-size: 4.2em;
-    margin-bottom: 20px;
+  color: #fff;
+  font-size: 4.2em;
+  margin-bottom: 20px;
 }
 
 div.hero h2 {
-    color: #4d5791;
+  color: #4d5791;
 }
 
 main {
-    padding: 40px;
-    width: 100%;
+  padding: 40px;
+  width: 100%;
 }
 
 .page-area {
-    max-width: 768px;
-    display: inline-block;
+  max-width: 768px;
+  display: inline-block;
 }
 
 footer {
-    height: 50px;
-    background-color: #b4c6f0;
-    padding: 40px;
-}
-
-.skip {
-    display: block;
-    line-height: 44px;
-    padding: 0 20px;
-    margin-top: -44px;
-}
-
-.skip:focus {
-    margin-top: 0;
+  height: 50px;
+  background-color: #b4c6f0;
+  padding: 40px;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 main article {
-    display: inline-block;
-    width: 100%;
-    max-width: 340px;
-    text-align: justify;
-    margin: 20px;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  text-align: justify;
+  margin: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    main article {
-        margin: 10px;
-    }
+  main article {
+    margin: 10px;
+  }
 }
 
 #d3Chart {
-    width: 960px;
-    height: 500px;
-    position: relative;
-    
+  width: 960px;
+  height: 500px;
+  position: relative;
 }
 
 #d3Chart svg {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 path.slice {
-    stroke-width: 2px;
+  stroke-width: 2px;
 }
 
 polyline {
-    stroke: black;
-    stroke-width: 1px;
-    fill: none;
-    opacity: 0.3;
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+  opacity: 0.3;
 }
 
 
